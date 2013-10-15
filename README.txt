@@ -5,7 +5,7 @@ export SCRAM_ARCH=slc5_amd64_gcc462
 scramv1 project CMSSW CMSSW_5_3_11
 cd CMSSW_5_3_11/src/
 
-wget -q -O - --no-check-certificate https://raw.github.com/tseva/IIHEcommon/master/TAGS.txt | sh
+wget -q -O - --no-check-certificate https://raw.github.com/iihe-cms-sw/VJetsTreeMaker/master/TAGS.txt | sh
 
 ## Ntuples
 

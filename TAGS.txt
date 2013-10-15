@@ -33,7 +33,7 @@ cvs co -r V01-04-26 RecoTauTag/RecoTau
 cvs co -r V01-04-14 RecoTauTag/Configuration
 cvs co -r V00-02-03s TauAnalysis/CandidateTools
 
-git clone git@github.com:tseva/IIHEcommon UserCode/llvv_fwk
+git clone git@github.com:iihe-cms-sw/VJetsTreeMaker UserCode/llvv_fwk
 
 wget "http://hepunx.rl.ac.uk/~adye/software/unfold/RooUnfold-1.1.1.tar.gz"
 gtar -xzvf RooUnfold-1.1.1.tar.gz 
