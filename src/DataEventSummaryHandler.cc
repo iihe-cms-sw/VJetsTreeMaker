@@ -63,6 +63,7 @@ bool DataEventSummaryHandler::init(TTree *t, bool needsToRecreate)
   t_->Branch("mcn",         &evSummary_.mcn,         "mcn/I");
   t_->Branch("mc_id",       evSummary_.mc_id,        "mc_id[mcn]/I");
   t_->Branch("mc_status",   evSummary_.mc_status,    "mc_status[mcn]/I");
+  t_->Branch("mc_mother",   evSummary_.mc_mother,    "mc_mother[mcn]/I");
   t_->Branch("mc_px",       evSummary_.mc_px,        "mc_px[mcn]/F");
   t_->Branch("mc_py",       evSummary_.mc_py,        "mc_py[mcn]/F");
   t_->Branch("mc_pz",       evSummary_.mc_pz,        "mc_pz[mcn]/F");
@@ -228,6 +229,8 @@ bool DataEventSummaryHandler::init(TTree *t, bool needsToRecreate)
   t_->Branch("jn_genUnfjpy",      evSummary_.jn_genUnfjpy,          "jn_genUnfjpy[jnUnf]/F");
   t_->Branch("jn_genUnfjpz",      evSummary_.jn_genUnfjpz,          "jn_genUnfjpz[jnUnf]/F");
   t_->Branch("jn_genUnfjen",      evSummary_.jn_genUnfjen,          "jn_genUnfjen[jnUnf]/F");
+  t_->Branch("jn_genUnfjhad",     evSummary_.jn_genUnfjhad,         "jn_genUnfjhad[jnUnf]/F");
+  t_->Branch("jn_genUnfjptcf",    evSummary_.jn_genUnfjptcf,        "jn_genUnfjptcf[jnUnf]/F");
 
   //MET
   t_->Branch("metn",        &evSummary_.metn,       "metn/I");
@@ -302,6 +305,7 @@ bool DataEventSummaryHandler::attach(TTree *t,bool readPFbranch)
   t_->SetBranchAddress("mcn",         &evSummary_.mcn);
   t_->SetBranchAddress("mc_id",       evSummary_.mc_id);
   t_->SetBranchAddress("mc_status",   evSummary_.mc_status);
+  t_->SetBranchAddress("mc_mother",   evSummary_.mc_mother);
   t_->SetBranchAddress("mc_px",       evSummary_.mc_px);
   t_->SetBranchAddress("mc_py",       evSummary_.mc_py);
   t_->SetBranchAddress("mc_pz",       evSummary_.mc_pz);

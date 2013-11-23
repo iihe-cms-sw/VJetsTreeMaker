@@ -40,7 +40,7 @@ class DataEventSummary //: public TObject
   Int_t id1, id2, nup;
 
   //gen level event
-  Int_t mcn, mc_id[MAXDATAOBJECTS], mc_status[MAXDATAOBJECTS];
+  Int_t mcn, mc_id[MAXDATAOBJECTS], mc_status[MAXDATAOBJECTS], mc_mother[MAXDATAOBJECTS];
   Float_t mc_px[MAXDATAOBJECTS],mc_py[MAXDATAOBJECTS],mc_pz[MAXDATAOBJECTS],mc_en[MAXDATAOBJECTS], mc_lxy[MAXDATAOBJECTS]; 
 
   //leptons
@@ -86,7 +86,7 @@ class DataEventSummary //: public TObject
   Int_t   jn_genflav[MAXDATAOBJECTS], jn_genid[MAXDATAOBJECTS];
   Float_t jn_genpx[MAXDATAOBJECTS], jn_genpy[MAXDATAOBJECTS], jn_genpz[MAXDATAOBJECTS], jn_genen[MAXDATAOBJECTS];
   Float_t jn_genjpx[MAXDATAOBJECTS], jn_genjpy[MAXDATAOBJECTS], jn_genjpz[MAXDATAOBJECTS], jn_genjen[MAXDATAOBJECTS];
-  Float_t jn_genUnfjpx[MAXDATAOBJECTS], jn_genUnfjpy[MAXDATAOBJECTS], jn_genUnfjpz[MAXDATAOBJECTS], jn_genUnfjen[MAXDATAOBJECTS];
+  Float_t jn_genUnfjpx[MAXDATAOBJECTS], jn_genUnfjpy[MAXDATAOBJECTS], jn_genUnfjpz[MAXDATAOBJECTS], jn_genUnfjen[MAXDATAOBJECTS], jn_genUnfjptcf[MAXDATAOBJECTS], jn_genUnfjhad[MAXDATAOBJECTS], jn_genUnfjem[MAXDATAOBJECTS];
 
   
   //met 
